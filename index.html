@@ -332,191 +332,198 @@ for example VAST flashvar DoubleClick Ad and Companion:
         });
       }
     });
-</script>
+  </script>
 
-</section> 
-  </div>
-
-
-
-
-  <div class="step slide" data-x="1800" data-y="700">
-    <section class="middle"> 
-    <header> 
-    <h2> Controlling which players use HTML5 </h2>
-    </header>
-    <img src="images/browser_overview.png" style="position:relative;left:-280px;">
-    <ul style="text-align:left;position:relative;right:-560px;top:-540px;">
-      <li> Kaltura optimized defaults</li>
-      <li> <a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Lead_with_HTML5">Want to lead with HTML5 ?</a></li>					
-      <li> <a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Lead_with_HTML5_on_Android">Don't use Flash on Android ?</a> </li>
-      <li> <a href="http://html5video.org/wiki/KalturaPlugins:UserAgentPlayerRules">Fine grain control over all player rules ?</a> </li>
-    </ul>
-    </section> 
-  </div>
-
-
-
-  <div class="step slide" data-x="1800" data-y="1400">
-    <section class="middle"> 
-    <header> 
-    <h2> More than one way to skin a Kaltura Player </h2>
-    </header>
-
-    <div id="mySkinPlayer" style="float:left;position:relative;left:10px;width:400px;height:330px;"></div>
-    <div style="float:left">
-      <ul style="text-align:left;position:relative;left:40px;">
-        <li> <a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Setting_player_.22theme.22_from_presets">Choose a preset</a> </li> 
-        <li> <a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#White-label_the_player_or_custom_logo">modify custom buttons</a> </li>
-        <li> <a href="http://html5video.org/wiki/KalturaPlugins:ExternalResources">Add custom css and or javascript</a> </li> 
-        <li> <a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Set_a_custom_jQuery_UI_Skin_file">Extend or override jQuery UI</a> </li>  
-      </ul>
-    </div>
-    <script type="text/javascript">
-      kWidget.embed({
-          'targetId': 'mySkinPlayer',
-          'wid': '_861182',
-          'uiconf_id' : '7335461',
-          'entry_id' : '1_gq12hhkj',
-          'flashvars':{
-          'customCaptionsButton':true
-          }
-          });
-</script>
-</section> 
-  </div>
-
-
-
-
-  <div class="step slide" data-x="1800" data-y="2100">
-    <section class="middle"> 
-    <header> 
-    <h2> Can I leverage HTML5 in native applications? <br> Yes! </h2>
-    </header>
-    <div style="position:relative;left:200px;text-align:left">
-      <ul> 
-        <li> Native wrapping with <a href="http://www.sencha.com/">Sencha</a> </li>
-        <li> Native wrapping with <a href="http://phonegap.com/">PhoneGap</a>, <a href="https://github.com/mdale/Kaltura.mobileFeatures"> sample on github</a> </li>
-        <li> HTML5 library features '<a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Embedding_the_HTML5_player_in_native_apps">WebKitPlaysInline</a>'</li>
-        <img style="height:300px" src="images/phonegap1.png"> <img style="height:300px" src="images/phonegap2.png"> <img style="height:300px" src="images/phonegapIpad.png">
-      </ul> 
-    </div>
-    </section> 
-  </div>
-
-
-
-
-  <div class="step slide" data-x="1800" data-y="2800">
-    <section class="middle"> 
-    <header> 
-    <h2> Plugins: OnPage vs in IFrame vs Flash </h2>
-    </header>
-
-    <img src="images/onPageVsiframeplugins.png">
-    <br>
-    Also see <a href="http://www.kaltura.org/apis/stagingHtml5lib/modules/KalturaSupport/tests/ExternalResources.qunit.html?forceMobileHTML5"> example page </a> with uiConf in source,
-    For more uiConf fun see Eitan's talk!
-    </section> 
-  </div>
-
-
-  <div class="step slide" data-x="1800" data-y="3500">
-    <section class="middle"> 
-    <header> 
-    <h2> Community Development!, gitastic! </h2>
-    </header>
-    <ul class="bulleted" style="font-size:130%;position:relative;left:100px;text-align:left">
-      <li> Easy code <a href="https://github.com/kaltura/mwEmbed/commits/">development tracking and visibility</a></li>					
-      <li> Feature <a href="https://github.com/kaltura/mwEmbed/branches/">branches</a> enable safe development of new features </li>
-      <li> <a href="https://github.com/kaltura/mwEmbed/tags/">Tags</a> help communicate library state. </li> 
-      <li> <a href="https://github.com/kaltura/mwEmbed/issues?milestone=4&state=open">Issue tracking</a> an milestones, help map <a href="http://html5video.org/wiki/Kaltura_HTML5_Release_Notes">out release planning</a> 
-      <li> ... if only there was a chart to make sense of it all ... </li>
-    </ul>
-    </section> 
-  </div>
-
-
-
-  <div class="step slide" data-x="1800" data-y="4200">
-    <section class="middle"> 
-    <header> 
-    <img src="images/Kaltura_git_workflow.png">
-    </header>
-
-    </section> 
-  </div>
-
-
-  <div class="step slide" data-x="1800" data-y="4900">
-    <section class="middle"> 
-    <header> 
-    <h2> Testing Testing Testing! </h2> 
-    </header>
-    <ul class="bulleted" style="font-size:130%;position:relative;left:100px;text-align:left">
-      <li> Qunit + Test Swarm, <a href="http://html5video.org/blog/2011/12/08/quality-assurance-testing-with-testswarm-and-qunit/">blog post</a> with more details </li>  
-      <li> Some progress on <a href=""http://www.kaltura.org/apis/stagingHtml5lib/modules/KalturaSupport/tests/BasicPlayer.qunit.html?runQunitTests=1"">Automated testing</a> </li> 
-      <li> Improving QA process, more supported environments </li> 
-    </ul>
-    <img src="images/Testswarm_Running_Tests.png">
-    </section>
-  </div>
-
-
-  <div class="step slide" data-x="1800" data-y="5600">
-    <section class="middle"> 
-    <header> 
-    <h2> HTML5, The Future is Now</h2> 
-    </header>
-    <ul class="bulleted" style="font-size:130%;position:relative;left:100px;text-align:left">
-      <li> "native apps" with html5 backend </li>
-      <li> Microsoft windows 8, tables </li>
-      <li> Chrome on Android, Mozilla boot to gecko </li>
-      <li> Smart tv's and game console 'applification of television </li>
-    </ul>
-    </section> 
-  </div>
-
-
-  <div class="step slide" data-x="2700" data-y="0">
-    <section class="middle"> 
-    <header> 
-    <h2> HTML5 Video beyond the web "page"</h2> 
-    </header>
-    <ul class="bulleted" style="font-size:130%;position:relative;left:100px;text-align:left">
-      <li> New Experiences</li>
-      <li> WebGL</li>
-      <li> WebRTC</li>
-      <li> Mix and Match </li>
-    </ul>
-    </section> 
-  </div>
-
-
-
-  <div class="step slide" data-x="2700" data-y="700">
-    <section class="middle"> 
-    <header> 
-    <h2> Questions ? </h2> 
-    </header>
-
-    </section> 
-  </div>
-
-  <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
-  </div>
-
+  </section> 
 </div>
-<script src="js/impress.js"></script>
-<script>impress().init();</script> 
-<!--[if lt IE 9]>
-<script 
-  src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">
-</script>
-<script>CFInstall.check({ mode: "overlay" });</script>
-<![endif]--> 
 
-  </body> 
+
+
+
+<div class="step slide" data-x="1800" data-y="700">
+  <section class="middle"> 
+  <header> 
+  <h2> Controlling which players use HTML5 </h2>
+  </header>
+  <img src="images/browser_overview.png" style="position:relative;left:-280px;">
+  <ul style="text-align:left;position:relative;right:-560px;top:-540px;">
+    <li> Kaltura optimized defaults</li>
+    <li> <a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Lead_with_HTML5">Want to lead with HTML5 ?</a></li>					
+    <li> <a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Lead_with_HTML5_on_Android">Don't use Flash on Android ?</a> </li>
+    <li> <a href="http://html5video.org/wiki/KalturaPlugins:UserAgentPlayerRules">Fine grain control over all player rules ?</a> </li>
+  </ul>
+  </section> 
+</div>
+
+
+
+<div class="step slide" data-x="1800" data-y="1400">
+  <section class="middle"> 
+  <header> 
+  <h2> More than one way to skin a Kaltura Player </h2>
+  </header>
+
+  <div id="mySkinPlayer" style="float:left;position:relative;left:10px;width:400px;height:330px;"></div>
+  <div style="float:left">
+    <ul style="text-align:left;position:relative;left:40px;">
+      <li> <a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Setting_player_.22theme.22_from_presets">Choose a preset</a> </li> 
+      <li> <a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#White-label_the_player_or_custom_logo">modify custom buttons</a> </li>
+      <li> <a href="http://html5video.org/wiki/KalturaPlugins:ExternalResources">Add custom css and or javascript</a> </li> 
+      <li> <a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Set_a_custom_jQuery_UI_Skin_file">Extend or override jQuery UI</a> </li>  
+    </ul>
+  </div>
+  <script type="text/javascript">
+    kWidget.embed({
+        'targetId': 'mySkinPlayer',
+        'wid': '_861182',
+        'uiconf_id' : '7335461',
+        'entry_id' : '1_gq12hhkj',
+        'flashvars':{
+        'customCaptionsButton':true
+        }
+        });
+      </script>
+      </section> 
+    </div>
+
+
+
+
+    <div class="step slide" data-x="1800" data-y="2100">
+      <section class="middle"> 
+      <header> 
+      <h2> Can I leverage HTML5 in native applications? <br> Yes! </h2>
+      </header>
+      <div style="position:relative;left:200px;text-align:left">
+        <ul> 
+          <li> Native wrapping with <a href="http://www.sencha.com/">Sencha</a> </li>
+          <li> Native wrapping with <a href="http://phonegap.com/">PhoneGap</a>, <a href="https://github.com/mdale/Kaltura.mobileFeatures"> sample on github</a> </li>
+          <li> HTML5 library features '<a href="http://html5video.org/wiki/Kaltura_HTML5_Configuration#Embedding_the_HTML5_player_in_native_apps">WebKitPlaysInline</a>'</li>
+          <img style="height:300px" src="images/phonegap1.png"> <img style="height:300px" src="images/phonegap2.png"> <img style="height:300px" src="images/phonegapIpad.png">
+        </ul> 
+      </div>
+      </section> 
+    </div>
+
+
+
+
+    <div class="step slide" data-x="1800" data-y="2800">
+      <section class="middle"> 
+      <header> 
+      <h2> Plugins: OnPage vs in IFrame vs Flash </h2>
+      </header>
+
+      <img src="images/onPageVsiframeplugins.png">
+      <br>
+      Also see <a href="http://www.kaltura.org/apis/stagingHtml5lib/modules/KalturaSupport/tests/ExternalResources.qunit.html?forceMobileHTML5"> example page </a> with uiConf in source,
+      For more uiConf fun see Eitan's talk!
+      </section> 
+    </div>
+
+
+    <div class="step slide" data-x="1800" data-y="3500">
+      <section class="middle"> 
+      <header> 
+      <h2> Community Development!, gitastic! </h2>
+      </header>
+      <ul class="bulleted" style="font-size:130%;position:relative;left:100px;text-align:left">
+        <li> Easy code <a href="https://github.com/kaltura/mwEmbed/commits/">development tracking and visibility</a></li>					
+        <li> Feature <a href="https://github.com/kaltura/mwEmbed/branches/">branches</a> enable safe development of new features </li>
+        <li> <a href="https://github.com/kaltura/mwEmbed/tags/">Tags</a> help communicate library state. </li> 
+        <li> <a href="https://github.com/kaltura/mwEmbed/issues?milestone=4&state=open">Issue tracking</a> an milestones, help map <a href="http://html5video.org/wiki/Kaltura_HTML5_Release_Notes">out release planning</a> 
+        <li> ... if only there was a chart to make sense of it all ... </li>
+      </ul>
+      </section> 
+    </div>
+
+
+
+    <div class="step slide" data-x="1800" data-y="4200">
+      <section class="middle"> 
+      <header> 
+      <img src="images/Kaltura_git_workflow.png">
+      </header>
+
+      </section> 
+    </div>
+
+
+    <div class="step slide" data-x="1800" data-y="4900">
+      <section class="middle"> 
+      <header> 
+      <h2> Testing Testing Testing! </h2> 
+      </header>
+      <ul class="bulleted" style="font-size:130%;position:relative;left:100px;text-align:left">
+        <li> Qunit + Test Swarm, <a href="http://html5video.org/blog/2011/12/08/quality-assurance-testing-with-testswarm-and-qunit/">blog post</a> with more details </li>  
+        <li> Some progress on <a href=""http://www.kaltura.org/apis/stagingHtml5lib/modules/KalturaSupport/tests/BasicPlayer.qunit.html?runQunitTests=1"">Automated testing</a> </li> 
+        <li> Improving QA process, more supported environments </li> 
+      </ul>
+      <img src="images/Testswarm_Running_Tests.png">
+      </section>
+    </div>
+
+
+    <div class="step slide" data-x="1800" data-y="5600">
+      <section class="middle"> 
+      <header> 
+      <h2> HTML5, The Future is Now</h2> 
+      </header>
+      <ul class="bulleted" style="font-size:130%;position:relative;left:100px;text-align:left">
+        <li> "native apps" with html5 backend </li>
+        <li> Microsoft windows 8, tables </li>
+        <li> Chrome on Android, Mozilla boot to gecko </li>
+        <li> Smart tv's and game console 'applification of television </li>
+      </ul>
+      </section> 
+    </div>
+
+
+    <div class="step slide" data-x="2700" data-y="0">
+      <section class="middle"> 
+      <header> 
+      <h2> HTML5 Video beyond the web "page"</h2> 
+      </header>
+      <ul class="bulleted" style="font-size:130%;position:relative;left:100px;text-align:left">
+        <li> New Experiences</li>
+        <li> WebGL</li>
+        <li> WebRTC</li>
+        <li> Mix and Match </li>
+      </ul>
+      </section> 
+    </div>
+
+
+
+    <div class="step slide" data-x="2700" data-y="700">
+      <section class="middle"> 
+      <header> 
+      <h2> Questions ? </h2> 
+      </header>
+
+      </section> 
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+  </div>
+  <script src="js/impress.js"></script>
+  <script>impress().init();</script> 
+
+  <script>
+    if ("ontouchstart" in document.documentElement) { 
+      document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+  </script>
+
+  <!--[if lt IE 9]>
+  <script 
+    src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">
+  </script>
+  <script>CFInstall.check({ mode: "overlay" });</script>
+  <![endif]--> 
+
+</body> 
 
 </html>
